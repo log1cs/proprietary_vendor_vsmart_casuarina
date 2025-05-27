@@ -84,17 +84,21 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/vsmart/casuarina/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/vsmart/casuarina/proprietary/vendor/etc/init/vendor.vin.vTzService@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.vin.vTzService@1.0-service.rc \
+    vendor/vsmart/casuarina/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
+    vendor/vsmart/casuarina/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/vsmart/casuarina/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
     vendor/vsmart/casuarina/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     vendor/vsmart/casuarina/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
     vendor/vsmart/casuarina/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     vendor/vsmart/casuarina/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
+    vendor/vsmart/casuarina/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/vsmart/casuarina/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/vsmart/casuarina/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/vsmart/casuarina/proprietary/vendor/etc/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf \
     vendor/vsmart/casuarina/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/vsmart/casuarina/proprietary/vendor/etc/wifi/WCNSS_qcom_wlan_nv_v430mp_v1.5.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv_v430mp_v1.5.bin \
     vendor/vsmart/casuarina/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
+    vendor/vsmart/casuarina/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/a506_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.b00 \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/a506_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.b01 \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/a506_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.b02 \
@@ -433,7 +437,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     fpsensor_fingerprint.default \
-    vendor.qti.gnss@3.0-impl \
+    vendor.qti.gnss@4.0-impl \
     vendor.qti.hardware.alarm@1.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     vendor.qti.hardware.bluetooth_sar@1.0-impl \
@@ -460,9 +464,14 @@ PRODUCT_PACKAGES += \
     libQTEEConnector_vendor \
     libSecureUILib \
     libStDrvInt \
+    libasn1cper \
+    libasn1crt \
+    libasn1crtx \
     libbluetooth_audio_session_qti \
     libbt-hidlclient \
     libbtnv \
+    libcdfw \
+    libcdfw_remote_api \
     libcne \
     libcneapiclient \
     libcneoplookup \
@@ -482,11 +491,12 @@ PRODUCT_PACKAGES += \
     libkeymasterutils \
     liblbs_core \
     libloc_api_v02 \
+    libloc_socket \
     liblocationservice \
     liblocationservice_glue \
     liblowi_client \
-    liblowi_wifihal \
     liblqe \
+    libminksocket \
     libnetmgr \
     libnetmgr_common \
     libnetmgr_nr_fusion \
@@ -499,7 +509,6 @@ PRODUCT_PACKAGES += \
     libqcmaputils \
     libqcrilFramework \
     libqcrildatactl \
-    libqdma_file_agent \
     libqisl \
     libqrtr \
     libqtikeymaster4 \
@@ -525,7 +534,6 @@ PRODUCT_PACKAGES += \
     libsecureui_svcsock \
     libsensorndkbridge \
     libsettings \
-    libslimclient \
     libssd \
     libsystem_health_mon \
     libtime_genoff \
@@ -534,6 +542,8 @@ PRODUCT_PACKAGES += \
     libwvhidl \
     libxml \
     libxtadapter \
+    libxtwifi_server_protocol \
+    libxtwifi_server_protocol_uri_v3 \
     libdrmclearkeyplugin \
     qcrild_librilutils \
     qtibus \
@@ -554,8 +564,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@1.2 \
     vendor.qti.gnss@2.0 \
     vendor.qti.gnss@2.1 \
-    vendor.qti.gnss@3.0-service \
     vendor.qti.gnss@3.0 \
+    vendor.qti.gnss@4.0-service \
+    vendor.qti.gnss@4.0 \
     vendor.qti.hardware.alarm@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.data.cne.internal.api@1.0 \
@@ -665,7 +676,7 @@ PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     dpmapi \
     qcrilhook \
-    vendor.qti.gnss@3.0-service.xml \
+    vendor.qti.gnss@4.0-service.xml \
     adpl \
     adsprpcd \
     cnd \
@@ -689,6 +700,7 @@ PRODUCT_PACKAGES += \
     irsc_util \
     loc_launcher \
     lowi-server \
+    mlid \
     mm-pp-dpps \
     mm-qcamera-app \
     msm_irqbalance \
@@ -704,11 +716,12 @@ PRODUCT_PACKAGES += \
     qti \
     rmt_storage \
     sensors.qti \
-    slim_daemon \
     tftp_server \
     thermal-engine \
     time_daemon \
     xtra-daemon \
+    xtwifi-client \
+    xtwifi-inet-agent \
     dpmd
 
 PRODUCT_PACKAGES += \

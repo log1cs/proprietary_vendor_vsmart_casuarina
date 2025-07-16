@@ -292,6 +292,9 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-service-qti \
     mm-qcamera-app
 
+PRODUCT_PACKAGES += \
+    vendor_firmware_wlan_prima_WCNSS_qcom_wlan_nv_bin
+
 PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/vsmart/casuarina/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \

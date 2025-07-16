@@ -19,6 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/vendor/etc/camera/ov8856_casuarina_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov8856_casuarina_chromatix.xml \
     vendor/vsmart/casuarina/proprietary/vendor/etc/camera/s5k3l6_casuarina_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3l6_casuarina_chromatix.xml \
     vendor/vsmart/casuarina/proprietary/vendor/etc/camera/s5k4h7yx_casuarina_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k4h7yx_casuarina_chromatix.xml \
+    vendor/vsmart/casuarina/proprietary/vendor/etc/camera/v430_camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/v430_camera.xml \
     vendor/vsmart/casuarina/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/vsmart/casuarina/proprietary/vendor/etc/init/init.fpsensor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fpsensor.rc \
     vendor/vsmart/casuarina/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \

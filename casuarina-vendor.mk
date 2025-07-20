@@ -408,6 +408,7 @@ PRODUCT_PACKAGES += \
     libcdsp_default_listener \
     libcdsprpc \
     libdiag \
+    libdisplayconfig.qti \
     libdsutils \
     libfastcrc \
     libfastcvadsp_stub \

@@ -5,11 +5,9 @@
 soong_namespace {
     imports: [
         "device/vsmart/casuarina",
-        "hardware/qcom-caf/msm8953",
+        "hardware/qcom-caf/msm8996",
         "hardware/qcom-caf/wlan",
         "vendor/qcom/opensource/dataservices",
-        "vendor/qcom/opensource/display",
-        "vendor/qcom/opensource/commonsys/display",
     ],
 }
 
@@ -7282,6 +7280,49 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libcutils",
                 "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdisplayconfig.qti",
+    owner: "vsmart",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libdisplayconfig.qti.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libhidlbase",
+                "libutils",
+                "vendor.display.config@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libdisplayconfig.qti.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libhidlbase",
+                "libutils",
+                "vendor.display.config@2.0",
+                "libc++",
+                "libc",
                 "libm",
                 "libdl",
             ],

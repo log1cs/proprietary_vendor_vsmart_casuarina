@@ -21,6 +21,7 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/vendor/etc/camera/s5k4h7yx_casuarina_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k4h7yx_casuarina_chromatix.xml \
     vendor/vsmart/casuarina/proprietary/vendor/etc/camera/v430_camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/v430_camera.xml \
     vendor/vsmart/casuarina/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
+    vendor/vsmart/casuarina/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/vsmart/casuarina/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/vsmart/casuarina/proprietary/vendor/etc/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf \
     vendor/vsmart/casuarina/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
@@ -54,6 +55,30 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/fngap64.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/fngap64.mdt
 
 PRODUCT_PACKAGES += \
+    eglSubDriverAndroid \
+    libEGL_adreno \
+    libGLESv1_CM_adreno \
+    libGLESv2_adreno \
+    libQTapGLES \
+    libq3dtools_adreno \
+    libq3dtools_esx \
+    vulkan.msm8953 \
+    libC2D2 \
+    libCB \
+    libOpenCL \
+    libadreno_utils \
+    libc2d30_bltlib \
+    libgsl \
+    libhdr_tm \
+    libllvm-glnext \
+    libllvm-qcom \
+    libmm-hdcpmgr \
+    libscalar \
+    libsdm-color \
+    libsdm-diag \
+    libsdm-disp-vndapis \
+    libsdmextension \
+    libtinyxml2_1 \
     camera.msm8953 \
     libacdb-fts \
     libacdbloader \
@@ -274,7 +299,12 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session_qti \
     libbt-hidlclient \
     libbtnv \
+    libdisp-aba \
     libfp_ext_svc2 \
+    vendor.display.color@1.0 \
+    vendor.display.color@1.1 \
+    vendor.display.color@1.2 \
+    vendor.display.postproc@1.0 \
     vendor.fpsensor.hardware.fpsensorhidlsvc@2.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.fm@1.0 \
@@ -290,6 +320,8 @@ PRODUCT_PACKAGES += \
     fm_helium \
     libfm-hci \
     android.hardware.bluetooth@1.0-service-qti \
+    vendor.display.color@1.0-service \
+    mm-pp-dpps \
     mm-qcamera-app
 
 PRODUCT_PACKAGES += \
@@ -351,7 +383,6 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/vsmart/casuarina/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/vsmart/casuarina/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
-    vendor/vsmart/casuarina/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/vsmart/casuarina/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/vsmart/casuarina/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/vsmart/casuarina/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
@@ -388,23 +419,11 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
-    eglSubDriverAndroid \
-    libEGL_adreno \
-    libGLESv1_CM_adreno \
-    libGLESv2_adreno \
-    libq3dtools_adreno \
-    libq3dtools_esx \
     gatekeeper.msm8953 \
     keystore.msm8953 \
-    vulkan.adreno \
-    libC2D2 \
-    libCB \
-    libOpenCL \
     libQSEEComAPI \
-    libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
-    libc2d30_bltlib \
     libcdsp_default_listener \
     libcdsprpc \
     libdiag \
@@ -414,14 +433,9 @@ PRODUCT_PACKAGES += \
     libfastcvadsp_stub \
     libfastcvopt \
     libfastrpc_utf_stub \
-    libgsl \
-    libhdr_tm \
     libidl \
-    libllvm-glnext \
-    libllvm-qcom \
     libmdmdetect \
     libmdsprpc \
-    libmm-hdcpmgr \
     libmmosal \
     libperfconfig \
     libperfgluelayer \
@@ -443,18 +457,12 @@ PRODUCT_PACKAGES += \
     libqti-perfd-client \
     libqti-perfd \
     libqti-util \
-    libscalar \
-    libsdm-color \
-    libsdm-diag \
-    libsdm-disp-vndapis \
-    libsdmextension \
     libsdsprpc \
     libsensor1 \
     libsensor_reg \
     libssc_default_listener \
     libsysmon_cdsp_skel \
     libthermalclient \
-    libtinyxml2_1 \
     sensor_calibrate \
     sensors.ssc \
     vendor.qti.hardware.dsp@1.0 \
@@ -514,7 +522,6 @@ PRODUCT_PACKAGES += \
     libconfigdb \
     libcpion \
     libdataitems \
-    libdisp-aba \
     libdpmqmihal \
     libdrmfs \
     libdrmtime \
@@ -584,10 +591,6 @@ PRODUCT_PACKAGES += \
     qcrild_librilutils \
     qtibus \
     qtimutex \
-    vendor.display.color@1.0 \
-    vendor.display.color@1.1 \
-    vendor.display.color@1.2 \
-    vendor.display.postproc@1.0 \
     vendor.qti.data.factory@2.0 \
     vendor.qti.data.factory@2.1 \
     vendor.qti.data.factory@2.2 \
@@ -707,7 +710,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service-qti \
     android.hardware.keymaster@4.0-service-qti \
     qcrild \
-    vendor.display.color@1.0-service \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.perf@2.2-service \
     vendor.qti.hardware.qseecom@1.0-service \
@@ -721,7 +723,6 @@ PRODUCT_PACKAGES += \
     loc_launcher \
     lowi-server \
     mlid \
-    mm-pp-dpps \
     msm_irqbalance \
     netmgrd \
     pm-proxy \

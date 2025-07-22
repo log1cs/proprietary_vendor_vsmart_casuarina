@@ -27,6 +27,7 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/vendor/etc/camera/ov8856_casuarina_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov8856_casuarina_chromatix.xml \
     vendor/vsmart/casuarina/proprietary/vendor/etc/camera/s5k3l6_casuarina_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3l6_casuarina_chromatix.xml \
     vendor/vsmart/casuarina/proprietary/vendor/etc/camera/s5k4h7yx_casuarina_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k4h7yx_casuarina_chromatix.xml \
+    vendor/vsmart/casuarina/proprietary/vendor/etc/camera/v430_camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/v430_camera.xml \
     vendor/vsmart/casuarina/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
     vendor/vsmart/casuarina/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
     vendor/vsmart/casuarina/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \

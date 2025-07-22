@@ -374,6 +374,7 @@ PRODUCT_PACKAGES += \
     libmmcamera_isp_sub_module \
     libmmcamera_isp_template \
     libmmcamera_isp_wb40 \
+    libmmcamera_ov8856_4lane_casuarina \
     libmmcamera_paaf_lib \
     libmmcamera_pdaf \
     libmmcamera_pdafcamif \

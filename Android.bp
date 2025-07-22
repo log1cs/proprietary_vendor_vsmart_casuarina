@@ -12488,7 +12488,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.fpsensor.hardware.fpsensorhidlsvc@2.0.so",
             ],
             shared_libs: [
-                "libhidlbase-v32",
+                "libhidlbase_shim",
+                "libhidlbase",
                 "libhidltransport",
                 "libhwbinder",
                 "liblog",

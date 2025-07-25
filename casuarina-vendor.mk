@@ -82,7 +82,6 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
     vendor/vsmart/casuarina/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/vsmart/casuarina/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
-    vendor/vsmart/casuarina/proprietary/vendor/etc/init/vendor.vin.vTzService@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.vin.vTzService@1.0-service.rc \
     vendor/vsmart/casuarina/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
     vendor/vsmart/casuarina/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     vendor/vsmart/casuarina/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
@@ -120,14 +119,6 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/fngap64.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/fngap64.b05 \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/fngap64.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/fngap64.b06 \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/fngap64.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/fngap64.mdt \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/tzvin32.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/tzvin32.b00 \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/tzvin32.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/tzvin32.b01 \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/tzvin32.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/tzvin32.b02 \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/tzvin32.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/tzvin32.b03 \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/tzvin32.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/tzvin32.b04 \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/tzvin32.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/tzvin32.b05 \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/tzvin32.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/tzvin32.b06 \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/tzvin32.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/tzvin32.mdt \
     vendor/vsmart/casuarina/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
     vendor/vsmart/casuarina/proprietary/vendor/radio/qcril_database/upgrade/0_initial.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/0_initial.sql \
     vendor/vsmart/casuarina/proprietary/vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/10_version_update_ecc_table.sql \
@@ -206,7 +197,6 @@ PRODUCT_PACKAGES += \
     sensors.ssc \
     vendor.qti.hardware.iop@1.0_vendor \
     vendor.qti.hardware.iop@2.0_vendor \
-    vendor.vin.vTzService@1.0 \
     camera.msm8953 \
     libacdb-fts \
     libacdbloader \
@@ -683,7 +673,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.0-service \
     vendor.qti.hardware.qteeconnector@1.0-service \
     vendor.qti.hardware.tui_comm@1.0-service-qti \
-    vendor.vin.vTzService@1.0-service \
     ims_rtp_daemon \
     imsdatadaemon \
     imsqmidaemon \

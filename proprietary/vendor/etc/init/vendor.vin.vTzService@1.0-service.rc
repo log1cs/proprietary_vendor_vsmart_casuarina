@@ -1,4 +1,0 @@
-service vTzService /vendor/bin/hw/vendor.vin.vTzService@1.0-service
-    class hal
-    user system
-    group system readproc

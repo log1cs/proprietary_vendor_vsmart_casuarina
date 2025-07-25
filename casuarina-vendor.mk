@@ -420,7 +420,7 @@ PRODUCT_PACKAGES += \
     ftm_fm_lib \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
-    fpsensor_fingerprint.default \
+    fingerprint.msm8953 \
     vendor.qti.gnss@3.0-impl \
     vendor.qti.hardware.alarm@1.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \

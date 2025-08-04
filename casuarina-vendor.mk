@@ -198,7 +198,6 @@ PRODUCT_PACKAGES += \
     sensors.ssc \
     vendor.qti.hardware.iop@1.0_vendor \
     vendor.qti.hardware.iop@2.0_vendor \
-    camera.msm8953 \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
@@ -219,7 +218,6 @@ PRODUCT_PACKAGES += \
     libaudioalsa \
     libaudioconfigstore \
     libaudioparsers \
-    libcamera2ndk_vendor \
     libcapiv2svacnn \
     libcapiv2vop \
     libchromatix_csidtg_common \
@@ -297,13 +295,11 @@ PRODUCT_PACKAGES += \
     libgcs-calwrapper \
     libgcs-ipc \
     libgcs-osal \
-    libhal_dbg \
     libjpegdhw \
     libjpegdmahw \
     libjpegehw \
     liblistenjni \
     liblistensoundmodel2 \
-    libmm-qcamera \
     libmmcamera2_c2d_module \
     libmmcamera2_cpp_module \
     libmmcamera2_frame_algorithm \
@@ -339,7 +335,6 @@ PRODUCT_PACKAGES += \
     libmmcamera_hongshi_s5k3l6_casuarina_eeprom \
     libmmcamera_imglib \
     libmmcamera_imglib_faceproc_adspstub \
-    libmmcamera_interface \
     libmmcamera_irs1645 \
     libmmcamera_isp_abf40 \
     libmmcamera_isp_bcc40 \
@@ -394,12 +389,9 @@ PRODUCT_PACKAGES += \
     libmmcamera_tuning \
     libmmcamera_tuning_lookup \
     libmmjpeg \
-    libmmjpeg_interface \
-    libmmlib2d_interface \
     libmmqjpeg_codec \
     libmmqjpegdma \
     libmpbase \
-    libqomx_core \
     libqomx_jpegdec \
     libqomx_jpegenc \
     libqomx_jpegenc_pipe \
@@ -683,7 +675,6 @@ PRODUCT_PACKAGES += \
     loc_launcher \
     lowi-server \
     mm-pp-dpps \
-    mm-qcamera-app \
     msm_irqbalance \
     netmgrd \
     pm-proxy \

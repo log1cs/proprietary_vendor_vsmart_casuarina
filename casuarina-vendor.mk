@@ -29,17 +29,6 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/a506_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.b02 \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/a506_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.elf \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/a506_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.mdt \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_10_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_10_0.fw \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_12_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_12_0.fw \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_12_1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_12_1.fw \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_1_1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_1_1.fw \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_1_6.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_1_6.fw \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_2_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_2_0.fw \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_4_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_4_0.fw \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_5_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_5_0.fw \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_5_1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_5_1.fw \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_5_2.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_5_2.fw \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_6_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_6_0.fw \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/fngap64.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/fngap64.b00 \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/fngap64.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/fngap64.b01 \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/fngap64.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/fngap64.b02 \
@@ -50,24 +39,7 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/fngap64.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/fngap64.mdt
 
 PRODUCT_PACKAGES += \
-    camera.msm8953 \
     libactuator_dw9714_casuarina \
-    libarcsoft_beautyshot \
-    libarcsoft_dualcam_refocus_image \
-    libarcsoft_dualcam_refocus_video \
-    libarcsoft_hdr_detection \
-    libarcsoft_high_dynamic_range \
-    libarcsoft_low_light_hdr \
-    libarcsoft_low_light_shot \
-    libarcsoft_singlecam_bokeh \
-    libcamera2ndk_vendor \
-    libcapiv2svacnn \
-    libcapiv2vop \
-    libchromatix_csidtg_common \
-    libchromatix_csidtg_cpp_preview \
-    libchromatix_csidtg_postproc \
-    libchromatix_csidtg_preview \
-    libchromatix_csidtg_zsl_preview \
     libchromatix_gc2385_casuarina_common \
     libchromatix_gc2385_casuarina_cpp_preview \
     libchromatix_gc2385_casuarina_postproc \
@@ -132,115 +104,13 @@ PRODUCT_PACKAGES += \
     libchromatix_s5k4h7yx_casuarina_cpp_snapshot \
     libchromatix_s5k4h7yx_casuarina_postproc \
     libchromatix_s5k4h7yx_casuarina_snapshot \
-    libdepthmapwrapper \
-    libflash_pmic \
-    libhal_dbg \
-    libjpegdhw \
-    libjpegdmahw \
-    libjpegehw \
-    libmm-qcamera \
-    libmmcamera2_c2d_module \
-    libmmcamera2_cpp_module \
-    libmmcamera2_frame_algorithm \
-    libmmcamera2_iface_modules \
-    libmmcamera2_imglib_modules \
-    libmmcamera2_is \
-    libmmcamera2_isp_modules \
-    libmmcamera2_mct \
-    libmmcamera2_mct_shimlayer \
-    libmmcamera2_pp_buf_mgr \
-    libmmcamera2_pproc_modules \
-    libmmcamera2_q3a_core \
-    libmmcamera2_sensor_modules \
-    libmmcamera2_stats_algorithm \
-    libmmcamera2_stats_lib \
-    libmmcamera2_stats_modules \
-    libmmcamera_arcrtb_wrapper_lib \
-    libmmcamera_atmel_at24c32e_eeprom \
-    libmmcamera_bokeh \
-    libmmcamera_csidtg \
-    libmmcamera_dbg \
-    libmmcamera_depth_map \
-    libmmcamera_dummyalgo \
-    libmmcamera_eebinparse \
-    libmmcamera_eeprom_util \
-    libmmcamera_eztune_module \
-    libmmcamera_facedetection_lib \
-    libmmcamera_faceproc \
-    libmmcamera_faceproc2 \
     libmmcamera_gc2385_casuarina \
-    libmmcamera_hdr_gb_lib \
     libmmcamera_holitech_ov8856_casuarina_eeprom \
     libmmcamera_hongshi_s5k3l6_casuarina_eeprom \
-    libmmcamera_imglib \
-    libmmcamera_imglib_faceproc_adspstub \
-    libmmcamera_interface \
-    libmmcamera_irs1645 \
-    libmmcamera_isp_abf40 \
-    libmmcamera_isp_bcc40 \
-    libmmcamera_isp_be_stats44 \
-    libmmcamera_isp_bf_stats47 \
-    libmmcamera_isp_bg_stats44 \
-    libmmcamera_isp_bhist_stats44 \
-    libmmcamera_isp_bpc40 \
-    libmmcamera_isp_chroma_enhan40 \
-    libmmcamera_isp_chroma_suppress40 \
-    libmmcamera_isp_clamp_encoder40 \
-    libmmcamera_isp_clamp_video40 \
-    libmmcamera_isp_clamp_viewfinder40 \
-    libmmcamera_isp_color_correct40 \
-    libmmcamera_isp_color_xform_encoder40 \
-    libmmcamera_isp_color_xform_viewfinder40 \
-    libmmcamera_isp_cs_stats44 \
-    libmmcamera_isp_demosaic40 \
-    libmmcamera_isp_demux40 \
-    libmmcamera_isp_fovcrop_encoder40 \
-    libmmcamera_isp_fovcrop_viewfinder40 \
-    libmmcamera_isp_gamma40 \
-    libmmcamera_isp_ihist_stats44 \
-    libmmcamera_isp_linearization40 \
-    libmmcamera_isp_ltm44 \
-    libmmcamera_isp_luma_adaptation40 \
-    libmmcamera_isp_mce40 \
-    libmmcamera_isp_mesh_rolloff40 \
-    libmmcamera_isp_rs_stats44 \
-    libmmcamera_isp_scaler_encoder44 \
-    libmmcamera_isp_scaler_viewfinder44 \
-    libmmcamera_isp_sce40 \
-    libmmcamera_isp_sub_module \
-    libmmcamera_isp_template \
-    libmmcamera_isp_wb40 \
     libmmcamera_ov8856_4lane_casuarina \
-    libmmcamera_paaf_lib \
-    libmmcamera_pdaf \
-    libmmcamera_pdafcamif \
-    libmmcamera_ppbase_module \
-    libmmcamera_ppeiscore \
-    libmmcamera_quadracfa \
     libmmcamera_s5k3l6_casuarina \
     libmmcamera_s5k4h7yx_casuarina \
-    libmmcamera_sat_test_lib \
-    libmmcamera_stillmore_lib \
-    libmmcamera_sw2d_lib \
-    libmmcamera_thread_services \
-    libmmcamera_tintless_algo \
-    libmmcamera_tintless_bg_pca_algo \
     libmmcamera_tsp_s5k4h7_casuarina_eeprom \
-    libmmcamera_tuning \
-    libmmcamera_tuning_lookup \
-    libmmjpeg \
-    libmmjpeg_interface \
-    libmmlib2d_interface \
-    libmmqjpeg_codec \
-    libmmqjpegdma \
-    libmpbase \
-    libqomx_core \
-    libqomx_jpegdec \
-    libqomx_jpegenc \
-    libqomx_jpegenc_pipe \
-    libremosaic_daemon \
-    libseemore \
-    libvideoutils \
     fingerprint.msm8953 \
     libfp_ext_svc2 \
     vendor.fpsensor.hardware.fpsensorhidlsvc@2.0 \
@@ -253,8 +123,7 @@ PRODUCT_PACKAGES += \
     libfastcvadsp_skel \
     libscveBlobDescriptor_skel \
     libscveObjectSegmentation_skel \
-    libscveT2T_skel \
-    mm-qcamera-app
+    libscveT2T_skel
 
 PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/system/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
@@ -341,6 +210,17 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/a530_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pfp.fw \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/a530_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pm4.fw \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_10_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_10_0.fw \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_12_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_12_0.fw \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_12_1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_12_1.fw \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_1_1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_1_1.fw \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_1_6.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_1_6.fw \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_2_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_2_0.fw \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_4_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_4_0.fw \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_5_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_5_0.fw \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_5_1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_5_1.fw \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_5_2.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_5_2.fw \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_6_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_6_0.fw \
     vendor/vsmart/casuarina/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
     vendor/vsmart/casuarina/proprietary/vendor/radio/qcril_database/upgrade/0_initial.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/0_initial.sql \
     vendor/vsmart/casuarina/proprietary/vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/10_version_update_ecc_table.sql \
@@ -421,25 +301,142 @@ PRODUCT_PACKAGES += \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
     vendor.qti.power.pasrmanager@1.0 \
+    camera.msm8953 \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
     libadiertac \
     libadm \
     libadpcmdec \
+    libarcimageprocess \
+    libarcsoft_aiscenedetection \
+    libarcsoft_hdr_detection \
+    libarcsoft_high_dynamic_range \
+    libarcsoft_low_light_hdr \
+    libarcsoft_low_light_shot \
+    libarcsoft_object_tracking \
+    libarcsoft_singlecam_bokeh \
+    libarcsoft_videoautozoom \
+    libarcsoft_videostabs \
     libaudcal \
     libaudio_log_utils \
     libaudioalsa \
     libaudioconfigstore \
     libaudioparsers \
+    libcapiv2svacnn \
+    libcapiv2vop \
+    libchromatix_csidtg_common \
+    libchromatix_csidtg_cpp_preview \
+    libchromatix_csidtg_postproc \
+    libchromatix_csidtg_preview \
+    libchromatix_csidtg_zsl_preview \
+    libdepthmapwrapper \
     libdrc \
+    libflash_pmic \
     libgcs-calwrapper \
     libgcs-ipc \
     libgcs-osal \
+    libhal_dbg \
+    libjpegdhw \
+    libjpegdmahw \
+    libjpegehw \
     liblistensoundmodel2 \
+    libmm-qcamera \
+    libmmcamera2_c2d_module \
+    libmmcamera2_cpp_module \
+    libmmcamera2_frame_algorithm \
+    libmmcamera2_iface_modules \
+    libmmcamera2_imglib_modules \
+    libmmcamera2_is \
+    libmmcamera2_isp_modules \
+    libmmcamera2_mct \
+    libmmcamera2_mct_shimlayer \
+    libmmcamera2_pp_buf_mgr \
+    libmmcamera2_pproc_modules \
+    libmmcamera2_q3a_core \
+    libmmcamera2_sensor_modules \
+    libmmcamera2_stats_algorithm \
+    libmmcamera2_stats_lib \
+    libmmcamera2_stats_modules \
+    libmmcamera_bokeh \
+    libmmcamera_csidtg \
+    libmmcamera_dbg \
+    libmmcamera_depth_map \
+    libmmcamera_dummyalgo \
+    libmmcamera_eebinparse \
+    libmmcamera_eeprom_util \
+    libmmcamera_eztune_module \
+    libmmcamera_facedetection_lib \
+    libmmcamera_faceproc \
+    libmmcamera_faceproc2 \
+    libmmcamera_hdr_gb_lib \
+    libmmcamera_imglib \
+    libmmcamera_imglib_faceproc_adspstub \
+    libmmcamera_interface \
+    libmmcamera_irs1645 \
+    libmmcamera_isp_abf40 \
+    libmmcamera_isp_bcc40 \
+    libmmcamera_isp_be_stats44 \
+    libmmcamera_isp_bf_stats47 \
+    libmmcamera_isp_bg_stats44 \
+    libmmcamera_isp_bhist_stats44 \
+    libmmcamera_isp_bpc40 \
+    libmmcamera_isp_chroma_enhan40 \
+    libmmcamera_isp_chroma_suppress40 \
+    libmmcamera_isp_clamp_encoder40 \
+    libmmcamera_isp_clamp_video40 \
+    libmmcamera_isp_clamp_viewfinder40 \
+    libmmcamera_isp_color_correct40 \
+    libmmcamera_isp_color_xform_encoder40 \
+    libmmcamera_isp_color_xform_viewfinder40 \
+    libmmcamera_isp_cs_stats44 \
+    libmmcamera_isp_demosaic40 \
+    libmmcamera_isp_demux40 \
+    libmmcamera_isp_fovcrop_encoder40 \
+    libmmcamera_isp_fovcrop_viewfinder40 \
+    libmmcamera_isp_gamma40 \
+    libmmcamera_isp_ihist_stats44 \
+    libmmcamera_isp_linearization40 \
+    libmmcamera_isp_ltm44 \
+    libmmcamera_isp_luma_adaptation40 \
+    libmmcamera_isp_mce40 \
+    libmmcamera_isp_mesh_rolloff40 \
+    libmmcamera_isp_rs_stats44 \
+    libmmcamera_isp_scaler_encoder44 \
+    libmmcamera_isp_scaler_viewfinder44 \
+    libmmcamera_isp_sce40 \
+    libmmcamera_isp_sub_module \
+    libmmcamera_isp_template \
+    libmmcamera_isp_wb40 \
+    libmmcamera_paaf_lib \
+    libmmcamera_pdaf \
+    libmmcamera_pdafcamif \
+    libmmcamera_ppbase_module \
+    libmmcamera_ppeiscore \
+    libmmcamera_quadracfa \
+    libmmcamera_stillmore_lib \
+    libmmcamera_sw2d_lib \
+    libmmcamera_thread_services \
+    libmmcamera_tintless_algo \
+    libmmcamera_tintless_bg_pca_algo \
+    libmmcamera_tuning \
+    libmmcamera_tuning_lookup \
+    libmmjpeg \
+    libmmjpeg_interface \
+    libmmlib2d_interface \
+    libmmqjpeg_codec \
+    libmmqjpegdma \
+    libmpbase \
+    libqomx_core \
+    libqomx_jpegdec \
+    libqomx_jpegenc \
+    libqomx_jpegenc_pipe \
     libqtigef \
+    libremosaic_daemon \
+    libseemore \
     libsmwrapper \
     libsurround_3mic_proc \
+    libvideoutils \
     libvqzip \
     libwvaidl \
     com.qualcomm.qti.dpm.api@1.0_vendor \
@@ -703,6 +700,7 @@ PRODUCT_PACKAGES += \
     lowi-server \
     mlid \
     mm-pp-dpps \
+    mm-qcamera-app \
     msm_irqbalance \
     netmgrd \
     pm-proxy \
